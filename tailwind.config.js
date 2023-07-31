@@ -14,8 +14,9 @@ module.exports = {
       container: {
         center: true,
       },
+
       backgroundImage: {
-        "nama-gambar": "url('./dist/img/head.jpg')",
+        "hero-image": "url('/dist/img/head.jpg')",
       },
     },
   },

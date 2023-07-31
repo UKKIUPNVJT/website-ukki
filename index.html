@@ -10,18 +10,18 @@
 
 <body>
   <!-- Header Start -->
-  <header class="bg-white top-0 w-full left-0 flex items-center absolute z-10 lg:px-4">
+  <header class="bg-white top-0 w-full left-0 flex items-center absolute z-10 lg:px-4 navbar-fixed">
     <div class="container">
       <div class="flex justify-between items-center">
         <div class="flex items-center">
-          <div class="px-4 py-4">
-            <img src="dist/img/logoukki.png" alt="logo-ukki-upnvjt" class="h-14 object-cover" />
+          <div class="pl-4 pr-2 sm:pr-2 py-4">
+            <img src="dist/img/logoukki.png" alt="logo-ukki-upnvjt" class="h-11 sm:h-14 object-contain" />
           </div>
           <div class="">
-            <h2 class="text-lg font-medium xl:font-semibold text-primary -mb-1.5">
+            <h2 class="text-base sm:text-lg font-medium xl:font-semibold text-primary -mb-1.5">
               Unit Kegiatan Kerohanian Islam
             </h2>
-            <h1 class="text-base font-bold text-dark">
+            <h1 class="text-sm sm:text-base font-bold text-dark">
               UPN Veteran Jawa Timur
             </h1>
           </div>
@@ -33,6 +33,7 @@
             <span class="hamburger-line duration-300 ease-in-out origin-bottom-left"></span>
           </button>
 
+          <!-- Navigasi -->
           <nav id="nav-menu"
             class="absolute right-4 top-full w-full max-w-[250px] py-5 shadow-lg hidden lg:static lg:block lg:max-w-full rounded-br-lg rounded-bl-lg lg:rounded-none lg:shadow-none bg-white ">
             <ul id="navList" class="block lg:flex lg:gap-10 xl:gap-10">
@@ -90,20 +91,17 @@
   <!-- Header End -->
 
   <!-- Hero Section Start -->
-  <section class="pt-20 pb-8">
-    <div class=" bg-gradient-to-r from-black">
-      <div class="w-full h-[70vh] lg:h-[80vh] bg-fixed bg-no-repeat bg-cover bg-top text-center mix-blend-multiply"
-        style="background-image: url('dist/img/head.jpg')">
-
-        <div class="pt-40 items-center">
-          <h1 class="text-2xl lg:text-3xl font-bold text-white">
-            UKKI UPN "VETERAN" JAWA TIMUR
+  <section class="pb-8 ">
+    <header class="bg-cover bg-center bg-hero-image ">
+      <div class="bg-gradient-to-r from-black h-[550px] sm:h-[600px]">
+        <div class="py-72 sm:py-80 text-center">
+          <h1 class="text-white font-bold text-xl md:text-2xl xl:text-3xl tracking-wide">UKKI UPN "VETERAN" JAWA TIMUR
           </h1>
-          <p class="text-base lg:text-lg font-semibold text-yellow-50 mx-4">
-            Insyaallah Berkah, Allahu Akbar!
+          <p class="text-base md:text-xl xl:text-2xl font-light tracking-wide text-white ">InsyaAllah Berkah AllahuAkbar
           </p>
         </div>
       </div>
+    </header>
   </section>
   <!-- Hero Section End -->
 
@@ -184,33 +182,33 @@
       <!-- event1 -->
       <div class="mx-4 lg:mr-0">
         <div class="mx-4 lg:flex items-center lg:gap-6">
-          <h1 class="font-bold text-3xl mb-2">Event Terbaru</h1>
-          <div class="group cursor-pointer w-[195px] mb-2">
+          <h1 class="font-bold text-3xl">Event Terbaru</h1>
+          <!-- <div class="group cursor-pointer w-[195px] mb-2">
             <p class="flex -mb-0.5 text-tertiary text-base font-bold lg:pt-3">
               Lihat
               semua
               acara terbaru</p>
             <span class="block w-[40%] group-hover:w-full h-[3px] bg-primary transition:ease-in-out duration-700">
             </span>
-          </div>
+          </div> -->
         </div>
         <div class="mt-4 lg:mt-0 mx-4 lg:grid lg:grid-cols-2 lg:gap-24 xl:gap-1">
           <div class="flex lg:flex-col items-center lg:items-start gap-4">
             <div class="group cursor-pointer">
               <div class="flex items-center lg:flex-wrap gap-4 lg:gap-0 my-8">
-                <div class="w-64 h-28 lg:w-96 lg:h-64 bg-slate-200 xl:w-[450px] overflow-hidden">
+                <div class="w-[35%] h-28 lg:w-96 lg:h-64 bg-slate-200 xl:w-[450px] overflow-hidden">
                   <img src="dist/img/ukki-kurban.jpg"
-                    class="h-[90%] w-full duration-700 ease-in-out group-hover:scale-110 lg:h-64 bg-slate-200">
+                    class="h-[90%] w-full transition-transform duration-700 ease-in-out group-hover:scale-110 lg:h-64 bg-slate-200">
                 </div>
                 <p
-                  class="text-sm font-medium md:max-w-md md:text-left lg:mt-6 lg:text-lg lg:max-w-sm lg:font-semibold xl:font-bold group-hover:text-primary">
+                  class="text-sm font-medium w-[65%] lg:w-full md:text-left lg:mt-6 lg:text-lg lg:max-w-sm lg:font-semibold xl:font-bold group-hover:text-primary">
                   Kegiatan Qurban UPN "Veteran" Jawa Timur dalam rangka Idul Adha 1444H</p>
               </div>
             </div>
           </div>
 
           <div>
-            <div class="group cursor-pointer" onclick="openPopup()">
+            <div class="group cursor-pointer">
               <div class="flex items-center gap-4 lg:my-8">
                 <div class="w-[35%] h-28 bg-slate-200 overflow-hidden">
                   <img src="dist/img/ukki-sehat.jpg" alt=""
@@ -218,13 +216,6 @@
                 </div>
                 <p class="w-[65%] text-sm font-medium md:max-w-xs group-hover:text-primary">Olahraga Bersama UKKI UPN
                   "Veteran" Jawa Timur dalam rangka UKKI Sehat Edisi Badminton</p>
-              </div>
-            </div>
-            <!-- Pop-up -->
-            <div id="popup" onclick="closePopup()"
-              class="fixed inset-0  items-center justify-center z-50 hidden bg-black bg-opacity-[0.84] w-screen h-screen ">
-              <div class="bg-slate-200 p-1 max-w-[70%] mt-24 mx-auto">
-                <img src="dist/img/ukki-sehat.jpg" alt="ukki-tahsin" class="mb-4 w-full">
               </div>
             </div>
 
@@ -301,15 +292,15 @@
   <!-- Section Pendaftaran Start -->
   <section id="pendaftaran" class="pt-32 lg:pt-36">
     <div class="container mb-10">
-      <div class="w-full px-4">
-        <div class="mx-auto max-w-xl text-center">
-          <h2 class="text-3xl font-bold text-dark text-left">Penasaran Dengan</h2>
-          <h2 class="mb-4 text-3xl font-bold text-dark text-left">UKKI UPN "Veteran" Jawa Timur?</h2>
+      <div class="w-full">
+        <div class="mx-auto flex-wrap pl-4">
+          <h2 class="text-2xl md:text-3xl font-bold text-dark ">Penasaran Dengan</h2>
+          <h2 class="mb-4 text-2xl md:text-3xl font-bold text-dark ">UKKI UPN "Veteran" Jawa Timur?</h2>
         </div>
       </div>
-      <div class="w-full">
-        <iframe class="m-auto border-4 items-center" src="https://www.youtube.com/embed/xukHpBmEbM0" width="560"
-          height="315" title="YouTube video player" frameborder="5"
+      <div class="max-w-2xl aspect-[16/10] mx-4 sm:mx-auto py-4">
+        <iframe class="w-full h-full border-4" src="https://www.youtube.com/embed/xukHpBmEbM0"
+          title="YouTube video player" frameborder="5"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen>
         </iframe>
